@@ -111,6 +111,22 @@
   color: #000000;
 }
 
+.orenButton {
+  font-family: sans-serif;
+  color: #FFFFFF;
+  background: #000000;
+  border-radius: 2px;
+  border-color: #FF7B00;
+  border-width: 2px;
+  cursor: pointer;
+  transition-duration: 0.1s;
+}
+
+.orenButton:hover {
+  background: #FF7B00;
+  color: #000000;
+}
+
 .treeButton {
   font-family: sans-serif;
   border-width:1.5px;
