@@ -1847,6 +1847,7 @@ function Tab(t) {
   get("Tab3").style.display = "none";
   get("Tab4").style.display = "none";
   get("Tab5").style.display = "none";
+  get("Tab5.5").style.display = "none";
   get("Tab6").style.display = "none";
   get("Tab7").style.display = "none";
   get("Tab8").style.display = "none";
