@@ -133,6 +133,10 @@ function calcTotalOPGain() {
   );
 }
 
+function calcOrenGain() {
+  return (game.OP / 1e10) ** 0.1
+}
+
 function calcOPonInfMult() {
   return (game.upgrades.includes(5) ? 5 : 1) *
         (game.upgrades.includes(15) && game.base < 6 ? 666666 : 1) *
