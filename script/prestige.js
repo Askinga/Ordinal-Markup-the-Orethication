@@ -28,7 +28,7 @@ function orenfy(manmade = 0) {
       if (!confirm(`Are you sure you want to do the Orethication? It will reset Factor Shifts!"
 		: "")}`)) return;
     }
-    game.orens += getOrenGain();
+    game.orens += calcOrenGain();
 	game.factorShifts = 0;
 	game.canInf = false;
     resetEverythingInfDoes();
