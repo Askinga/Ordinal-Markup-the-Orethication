@@ -38,6 +38,27 @@
   color: #000000;
 }
 
+.orenTabButton {
+  font-family: sans-serif;
+  color: #FFFFFF;
+  background: #000000;
+  border-radius: 5px;
+  border-color: #000000;
+  border-weight: 10px;
+  cursor: pointer;
+  transition-duration: 0.1s;
+  width: 120px;
+  height: 40px;
+  font-size: 15pt;
+  font-weight: bold;
+  border: solid #FF7B00
+}
+
+.orenTabButton:hover {
+  background: #FF7B00;
+  color: #000000;
+}
+
 .boosterTabButton {
   font-family: sans-serif;
   color: #0000FF;
