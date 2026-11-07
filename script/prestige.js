@@ -22,6 +22,19 @@ function infinity(manmade = 0) {
   //if (manmade === 1) render();
 }
 
+function orenfy(manmade = 0) {
+  if (game.OP >= "e10") {
+    if (manmade === 1 && game.orConfirm === 1) {
+      if (!confirm(`Are you sure you want to do the Orethication? It will reset Factor Shifts!"
+		: "")}`)) return;
+    }
+    game.orens += getOrenGain();
+	game.factorShifts = 0;
+	game.canInf = false;
+    resetEverythingInfDoes();
+  }
+}
+
 // There was "manmade = 0" as the args, but manmade was never used, so I removed it.
 function factorShift() {
   if (game.OP >= getFSCost(game.factorShifts) && !(inChal(5) && game.factorShifts >= 2)) {
@@ -196,6 +209,7 @@ function resetEverythingCollapseDoes() {
   game.darkManifolds = 0;
   }
   game.maxCard = EN(0);
+  game.orens = 0;
 }
 
 function resetEverythingBoostDoes() {
@@ -220,4 +234,16 @@ function resetEverythingBoostDoes() {
   game.challenge = 0;
   game.chal8 = 0;
   game.chal9 = 0;
+  game.orens = 0;
+}
+
+function resetEverythingInfDoes() {
+	game.over = 0;
+    document.getElementById("infinityTabButton").style.display = "inline-block";
+    game.infUnlock = 1;
+    game.dynamic = 1;
+    game.decrementy = 0;
+    game.autoLoop.succ = 0;
+    game.autoLoop.lim = 0;
+    game.manualClicksLeft = 1000;
 }
